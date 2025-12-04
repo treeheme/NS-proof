@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ================== YOUR LAW'S DEFINED CONSTANTS ==================
+# ================== My LAW'S DEFINED CONSTANTS ==================
 # From your First-Principles Derivation
 THEORETICAL_GAMMA = 6.87
 THEORETICAL_N = 2.65e-34
@@ -14,7 +14,7 @@ p_exp = np.array([0.106, 0.104, 0.068, 0.040, 0.032, 0.015])
 M_kg = m_u * 1.660539e-27 # Convert unified atomic mass units to kg
 R_m = r_nm * 1e-9         # Convert nm to meters
 
-# ================== YOUR LAW'S FORMULA ==================
+# ================== My LAW'S FORMULA ==================
 def ukachi_law_theoretical(M, R, N_const, gamma_const):
     # The formula as described: P(M,R) = N / (pi * e * R^4 * log10(M/1kg)^gamma)
     # Assuming M is already in kg, M/1kg becomes just M.
@@ -85,3 +85,4 @@ plt.tight_layout()
 plt.savefig("Ukachi_Law_Universal_Validation.png", dpi=300, bbox_inches='tight')
 print("\nPlot saved as Ukachi_Law_Universal_Validation.png — OPEN IT NOW!")
 plt.show()
+
